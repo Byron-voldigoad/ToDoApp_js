@@ -1,0 +1,138 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 3rem 0;
+    background: url(1f2eea4b08d03997daac29fe9c854b98.jpg);
+    -webkit-background-size: cover;
+    background-size: cover; 
+    
+}
+
+.container{
+    width: 50%;
+    height: 100%;
+    border-radius: 8px;
+    padding: 2rem;
+    background-color: rgba(246, 248, 248, 0.5);
+
+}
+
+.container:hover{
+    background-color: rgba(117, 119, 117, 0.5);
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.section{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.input{
+    display: flex;
+    margin-bottom: 4rem;
+}
+#todoInput{
+    padding-left: 1rem;
+    flex: 1;
+}
+
+#submiBtn,
+.todo,.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    height: 2rem;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+.todo{
+    display: flex;
+    width: 100%;
+    height:  2rem;
+    background-color: antiquewhite;
+    margin-bottom: 1rem;
+}
+
+.todo p{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 0.5rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.todo .btn{
+    font-size: 1rem;
+    background-color: rgb(216, 34, 34);
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+#deleteAll{
+    padding: 0.5rem 1.2rem;
+}
+
+.btn{
+    cursor: pointer;
+    border: none;
+    background-color: rgb(164, 11, 64);
+    color: aliceblue;
+    transition: all 0.2s ease;
+}
+
+.btn:hover{
+    transform: translateY(-2px);
+}
+
+.btn:active{
+    transform: translateY(1px);
+}
+
+@media screen and (max-width: 1200px){
+    .container{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .container{
+        width: 100%;
+        margin: 0 1rem;
+    }
+
+    .bottom{
+        flex-direction: column;
+    }
+    .bottom p{
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    
+    .section{
+        width: 100%;
+        margin: 1rem;
+    }
+}
